@@ -62,6 +62,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/account', async function (req, res) {
+  console.log("in account", req.session)
   let { email } = req.session
   let customer = await UserService.getUserByEmail(email)
   if (!customer) {

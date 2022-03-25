@@ -21,7 +21,7 @@
 
   </head>
   <body class="text-center">
-    <form class="form-login" action="/login" method="post">
+    <form class="form-login" action="/login" method="POST">
       <img
         class="mb-4"
         src="./images/saasbase.png"
@@ -40,6 +40,16 @@
         name="email"
         class="form-control mb-3"
         placeholder="Email address"
+        required
+        autofocus
+      />
+      <label for="password" class="sr-only">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control mb-3"
+        placeholder="Password"
         required
         autofocus
       />
